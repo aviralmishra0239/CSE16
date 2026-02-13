@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Page</title>
+
+    <!-- Embedded CSS Styling -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4a90e2, #0077cc);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Sidebar course modules */
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h2 {
+            margin-bottom: 15px;
+            color: #0077cc;
+        }
+
+        .module {
+            margin-bottom: 15px;
+        }
+
+        .module h3 {
+            background: #0077cc;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .module ul {
+            list-style: none;
+            padding-left: 10px;
+            margin-top: 8px;
+        }
+
+        .module ul li {
+            padding: 6px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        .module ul li:hover {
+            background: #f0f8ff;
+            cursor: pointer;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .main-content h2 {
+            margin-bottom: 15px;
+            color: #0077cc;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Course info box */
+        .course-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9fbff;
+            border-left: 4px solid #0077cc;
+            border-radius: 5px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: #0077cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #005fa3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            background: #222;
+            color: white;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Web Development Online Course</h1>
+    <p>Learn HTML, CSS, and JavaScript with video lessons</p>
+</header>
+
+<div class="container">
+
+    <!-- Sidebar Modules -->
+    <div class="sidebar">
+        <h2>Course Modules</h2>
+
+        <div class="module">
+            <h3>Module 1: HTML Basics</h3>
+            <ul>
+                <li>Introduction to HTML</li>
+                <li>HTML Tags</li>
+                <li>Forms and Inputs</li>
+            </ul>
+        </div>
+
+        <div class="module">
+            <h3>Module 2: CSS Styling</h3>
+            <ul>
+                <li>CSS Selectors</li>
+                <li>Box Model</li>
+                <li>Flexbox and Grid</li>
+            </ul>
+        </div>
+
+        <div class="module">
+            <h3>Module 3: JavaScript</h3>
+            <ul>
+                <li>Variables</li>
+                <li>Functions</li>
+                <li>DOM Manipulation</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2>Course Video</h2>
+
+        <!-- Embedded YouTube Video -->
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/UB1O30fR-EE" 
+                title="YouTube video player" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="course-info">
+            <h3>About this course</h3>
+            <p>
+                This course teaches complete web development from beginner to advanced level.
+                You will learn HTML, CSS, and JavaScript with real-world projects.
+            </p>
+
+            <a href="#" class="btn">Enroll Now</a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Online Course Platform</p>
+</footer>
+
+</body>
+</html>
